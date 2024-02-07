@@ -94,9 +94,7 @@ X = data.drop(['Loan_Status'],axis=1)
 Y = data['Loan_Status']
 print(X.shape,Y.shape )
 
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y,
-													test_size=0.4,
-													random_state=1)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.4, random_state=1)
 X_train.shape, X_test.shape, Y_train.shape, Y_test.shape
 
 """# Model Training and Evaluation
